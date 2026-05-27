@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 14px;
+    height: 100vh;
 }
 
 .lista-filmes article{

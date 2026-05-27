@@ -3,6 +3,7 @@ import {useEffect, useState} from 'react';
 import api from '../../services/api';
 import { Link } from 'react-router-dom';
 import './home.css';
+import { DotLoader } from 'react-spinners';
 // URL da API /movie/now_playing?api_key=eaeef3a28bea6fa712dcb443c4340d9e=pt=BR
 
 
@@ -29,7 +30,7 @@ function Home(){
     if(loading){
         return(
             <div className="loading">
-                <h2>Carregando...</h2>
+                <DotLoader color="#E50914" size={60} />
             </div>
         )
     }

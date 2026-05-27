@@ -22,6 +22,7 @@ useEffect(()=>{
         .then((response)=>{
             setFilme(response.data);
             setLoading(false);
+            document.title = `PrimeFlix - ${response.data.title}`;
         })
         .catch(()=>{
             console.log("Filme Não Encontrado");
